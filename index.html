@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+  <script src="calculator.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="titleBar">
+
+      <div id="title">Calculator</div>
+      <div class="itemsTitleBar"><button id="minimize" onclick="minimize()" class="buttonTitleBar">-</button></div>
+      <div class="itemsTitleBar"><button id="close" onclick="quit()" class="buttonTitleBar">X</button></div>
+
+    </div>
+    <div id="visor">
+
+      <label id="tela"></label>
+
+    </div>
+
+    <div id="simbolo">
+
+      <div class="botao"><button class="others">%</button></div>
+      <div class="botao"><button class="others" onclick="display(this)" id="(">(</button></div>
+      <div class="botao"><button class="others" onclick="display(this)" id=")">)</button></div>
+      <div class="botao"><button class="others" onclick="erase()" id="">&larr;</button></div>
+      <div class="botao"><button class="others" onclick="clearAll()">C</button></div>
+      <div class="botao"><button class="others" onclick="display(this)">x²</button></div>
+      <div class="botao"><button class="others" onclick="display(this)">&radic;</button></div>
+      <div class="botao"><button class="others" onclick="display(this)">&divide;</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">7</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">8</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">9</button></div>
+      <div class="botao"><button class="others" onclick="display(this)">&times;</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">4</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">5</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">6</button></div>
+      <div class="botao"><button class="others" onclick="display(this)">&minus;</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">1</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">2</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">3</button></div>
+      <div class="botao"><button class="others" onclick="display(this)">&#43;</button></div>
+      <div class="botao"><button class="numbers">+/-</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)">0</button></div>
+      <div class="botao"><button class="numbers" onclick="display(this)" id=",">.</button></div>
+      <div class="botao"><button onclick=result() id="equal">=</button></div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

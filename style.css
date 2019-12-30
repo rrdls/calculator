@@ -1,0 +1,180 @@
+
+::-webkit-scrollbar {     
+    background-color:  rgb(31, 31, 31);
+    width: .8em
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+    background:   rgb(6, 6, 6);
+}
+
+html{
+    -webkit-tap-highlight-color:transparent;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 31, 31);
+    font-family:'Fira Code', monospace;
+    
+    
+    
+}
+
+.container{
+    
+    display: grid;
+    grid-template-rows: 8vh 24vh 67vh;
+    
+
+
+    
+}
+
+
+#titleBar{
+    display: grid;
+    grid-template-columns: 80%  10% 10%;
+    color: white;
+    font-size: 12px;
+    box-shadow: 0 0px 5px 0px rgb(22, 22, 22) ;
+}
+
+
+#title{
+    display: flex;
+    margin:10px;
+    align-items: center;
+    -webkit-app-region: drag;
+}
+
+.itemsTitleBar{
+    display: flex;
+    margin:2px;
+    align-items: center;
+    justify-content: center;
+}
+
+#tela{
+    display: flex;
+    width:295px;
+    height: 120px;
+    overflow-x: scroll;
+    
+    font-size: 30px;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    
+    
+}
+#visor{
+    display: flex;
+    background-color: rgb(31, 31, 31);
+    margin:20px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+#simbolo{
+    display: grid;
+    margin:5px;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    
+    
+}
+
+
+.botao{
+    display: inline-block;
+    list-style-type: none;
+    margin: 1px;
+    font-weight: bolder;
+   
+}
+
+#equal{ 
+    height: 100%;
+    width: 100%;
+    background-color: rgb(111, 25, 33);
+    border: none;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius:10px;
+}
+
+
+
+.others{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(22, 22, 22);
+    border: none;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius:10px;
+}  
+
+
+.buttonTitleBar{
+    height: 70%;
+    width:100%;
+    background-color:rgb(22, 22, 22);
+    border: none;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bolder;
+    margin:1px;
+    border-radius:10px;
+    
+}
+
+
+.numbers{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(6, 6, 6);
+    border: none;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius:10px;
+    
+}
+
+
+.others:hover{
+    background-color:rgb(88, 88, 88);
+}
+
+.numbers:hover{
+    background-color:rgb(88, 88, 88);
+}
+.buttonTitleBar:hover{
+    background-color: rgb(88, 88, 88);
+}
+
+#equal:hover{
+    background-color: rgb(211 ,18 ,34);
+
+}
